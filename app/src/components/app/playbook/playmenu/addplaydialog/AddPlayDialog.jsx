@@ -42,7 +42,7 @@ class AddPlayDialog extends React.Component {
       const { addDialogVisible } = this.props;
       return (
         <Modal
-          title="Add a play"
+          title="Import a file"
           visible={addDialogVisible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}

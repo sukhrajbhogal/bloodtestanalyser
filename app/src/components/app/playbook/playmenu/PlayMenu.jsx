@@ -6,14 +6,12 @@ import './PlayMenu.scss';
 import AddPlayDialog from './addplaydialog/AddPlayDialog';
 import DeletePlayDialog from './deleteplaydialog/DeletePlayDialog';
 
-const { SubMenu } = Menu;
-
 class PlayMenu extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      plays: [{ name: 'Split and Send' }, { name: 'Pinwheel' }],
+      plays: [{ name: 'Blood Cells' }, { name: 'Platelets' }],
       addDialogVisible: false,
       deleteDialogVisible: false,
       currentKey: '',
@@ -129,30 +127,19 @@ class PlayMenu extends React.Component {
             plays.map((val) => {
               const { name } = val;
               const keyName = name.replace(/\s+/g, '_');
-              const editKey = `${keyName}_edit`;
-              const deleteKey = `${keyName}_delete`;
-
               return (
-                <SubMenu
+                <Menu.Item
                   key={keyName}
-                  title={<span>{name}</span>}
                   onTitleClick={this.handleTitleClick}
                 >
-                  <Menu.Item key={editKey}>
-                    <Icon type="edit" />
-                    Edit
-                  </Menu.Item>
-                  <Menu.Item key={deleteKey}>
-                    <Icon type="delete" />
-                    Delete
-                  </Menu.Item>
-                </SubMenu>
+                  {name}
+                </Menu.Item>
               );
             })
           }
           <Menu.Item key="add-play">
-            <Icon type="plus" />
-            Add a play.
+            <Icon type="download" />
+            Import a file.
           </Menu.Item>
         </Menu>
 

@@ -11,6 +11,8 @@ import AppData from '../../context/AppData';
 import PlayMenu from './playbook/playmenu/PlayMenu';
 import Overview from './overview/Overview';
 import Risks from './risks/Risks';
+import { FilePond } from 'react-filepond';
+import 'filepond/dist/filepond.min.css';
 
 class App extends React.Component {
   constructor(props) {

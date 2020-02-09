@@ -2,8 +2,11 @@ import React from 'react';
 import { Modal, Input } from 'antd';
 import PropTypes from 'prop-types';
 import "./AddPlayDialog.scss"
-import { FilePond } from 'react-filepond';
+import { FilePond, registerPlugin } from 'react-filepond';
 import 'filepond/dist/filepond.min.css';
+import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
+import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css';
+registerPlugin(FilePondPluginImagePreview);
 
 class AddPlayDialog extends React.Component {
   constructor(props) {
@@ -44,6 +47,7 @@ class AddPlayDialog extends React.Component {
 
   onChange(e) {
     this.setState({ file: e.target.files[0] })
+    registerPlugin(FilePondPluginImagePreview);
   }
 
   render() {
@@ -57,8 +61,7 @@ class AddPlayDialog extends React.Component {
 
       >
 
-        <FilePond />
-
+        <FilePond name="File" server="#" />
 
 
 

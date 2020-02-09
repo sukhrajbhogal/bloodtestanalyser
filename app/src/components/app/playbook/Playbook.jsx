@@ -1,6 +1,5 @@
 import React from 'react';
 import './Playbook.scss';
-import PlayMenu from './playmenu/PlayMenu';
 import AppContext from '../../../context/AppContext';
 
 class Playbook extends React.Component {
@@ -16,8 +15,8 @@ class Playbook extends React.Component {
           (appData) => {
             console.log(appData);
             return (
-              <div>
-                <PlayMenu />
+              <div className="containerPlay">
+                <div><pre>{JSON.stringify(appData, null, 2) }</pre></div>
               </div>
             );
           }

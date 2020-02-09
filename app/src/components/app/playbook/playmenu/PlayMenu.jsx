@@ -15,7 +15,7 @@ class PlayMenu extends React.Component {
       plays: [{ name: 'Overview' }, { name: 'Risks' }],
       addDialogVisible: false,
       deleteDialogVisible: false,
-      currentKey: '',
+      currentKey: 'Overview',
       currentPlayName: '',
     };
   }

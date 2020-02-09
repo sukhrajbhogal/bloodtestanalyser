@@ -39,25 +39,27 @@ class Overview extends React.Component {
     const lowerBadBand = {
       from: bottom,
       to: loRange,
-      color: '#87b6ff',
+      color: '#596174',
       opacity: 1
     }
+    // middle
     const healthyBand = {
       from: loRange,
       to: hiRange,
-      color: '#99c1ff',
+      color: '#484e5e',
       opacity: 1
     }
     const upperBadBand = {
       from: hiRange,
       to: top,
-      color: '#87b6ff',
+      color: '#596174',
       opacity: 1
     }
+    // other
     const userValueBand = {
       from: userValue,
       to: userValue + ((top - bottom) * 0.005),
-      color: '#000000',
+      color: '#fcfcfc',
       opacity: 1
     }
     const plotBands = [
@@ -68,6 +70,8 @@ class Overview extends React.Component {
     ];
 
     const temp = [[]];
+
+    const inHealthyRange = userValue < hiRange && userValue > loRange;
 
     const tooltipRender = ({ point }) => {
       const { value } = point;
@@ -83,8 +87,11 @@ class Overview extends React.Component {
 
     return (
       <div className="chartWrapper">
-        <h1 style={{marginLeft: '9.5vw'}}>{title}</h1>
-        <Chart style={{ height: 120, width: '80%', margin: 'auto' }} >
+        <Card className="card">
+          <h1 style={{ marginLeft: '8.5vw', fontSize: 36, marginBottom: 0, fontWeight: 'bold' }}>{title}</h1>
+          <h1 style={{ marginLeft: '8.5vw', fontSize: 28, marginBottom: 0}}>Your level: <span className={inHealthyRange ? 'green-text' : 'red-text'} style={{fontWeight: 'bold'}}>{userValue}</span></h1>
+          <h1 style={{ marginLeft: '8.5vw', fontSize: 18, color: 'grey'}}>Healthy Range: {loRange} - {hiRange}</h1>
+        <Chart style={{ height: 120, width: '80%', margin: 'auto', borderRadius: 12 }} >
           {/* <ChartTitle text={title} color="black" font="19pt sans-serif" /> */}
           <ChartSeries>
             <ChartSeriesItem type="bullet" color="#0058e9" data={temp} />
@@ -95,14 +102,15 @@ class Overview extends React.Component {
           </ChartCategoryAxis>
           <ChartValueAxis>
             {/* bottom */}
-            <ChartValueAxisItem labels={{ color: '#0a0' }} majorGridLines={hidden} minorTicks={hidden} min={bottom} max={top} plotBands={plotBands} />
+            <ChartValueAxisItem labels={{ color: '#000' }} majorGridLines={hidden} minorTicks={hidden} min={bottom} max={top} plotBands={plotBands} />
 
           </ChartValueAxis>
           {/* <ChartSeriesItemTooltip background="red" /> */}
-          <ChartTooltip render={tooltipRender} style="right=0 !important"/>
- 
+          <ChartTooltip render={tooltipRender} style="right=0 !important" />
+
         </Chart>
-      </div>
+        </Card>
+      </div >
     );
   }
 
@@ -117,8 +125,8 @@ class Overview extends React.Component {
               {keyList.map((item) => {
                 const title = item.replace('_', ' ');
                 return (
-                  <div key={title} style={{width:'100%', padding: '8px'}}>
-                    <h1 style={{textAlign: 'center'}}>{title}</h1>
+                  <div key={title} style={{ width: '100%', padding: '8px' }}>
+                    <h1 style={{ fontWeight: 'bold', marginLeft: '6.75vw', fontSize: 48, marginTop: 48 }}>{title}</h1>
                     {
                       appData[item].map((metric) => {
                         console.log(metric)

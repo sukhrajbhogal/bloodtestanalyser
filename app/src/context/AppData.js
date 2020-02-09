@@ -3,14 +3,14 @@ const AppData = {
   Hematology_One: [
     {
       name: 'White Blood Cells',
-      value: 5.7,
+      value: 3.9,
       loRange: 4.0,
       hiRange: 11.0,
     },
     // Red blood cells
     {
       name: 'Red Blood Cells',
-      value: 5.02,
+      value: 4.3,
       loRange: 4.50,
       hiRange: 6.0,
     },

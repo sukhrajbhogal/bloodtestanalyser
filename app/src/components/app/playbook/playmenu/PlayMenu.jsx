@@ -2,6 +2,7 @@ import React from 'react';
 import { Menu, Icon, message } from 'antd';
 import 'antd/dist/antd.css';
 import './PlayMenu.scss';
+import { Link } from 'react-router-dom';
 
 import AddPlayDialog from './addplaydialog/AddPlayDialog';
 import DeletePlayDialog from './deleteplaydialog/DeletePlayDialog';
@@ -11,10 +12,10 @@ class PlayMenu extends React.Component {
     super(props);
 
     this.state = {
-      plays: [{ name: 'Blood Cells' }, { name: 'Platelets' }],
+      plays: [{ name: 'Overview' }, { name: 'Risks' }],
       addDialogVisible: false,
       deleteDialogVisible: false,
-      currentKey: '',
+      currentKey: 'Overview',
       currentPlayName: '',
     };
   }
@@ -104,6 +105,8 @@ class PlayMenu extends React.Component {
       currentPlayName: e.key,
       currentKey: `${e.key}_edit`,
     });
+
+
   }
 
   render() {
@@ -132,6 +135,7 @@ class PlayMenu extends React.Component {
                   key={keyName}
                   onTitleClick={this.handleTitleClick}
                 >
+                  <Link to={name.toLowerCase()} />
                   {name}
                 </Menu.Item>
               );

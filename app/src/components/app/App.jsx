@@ -8,6 +8,9 @@ import {
 import Playbook from './playbook/Playbook';
 import AppContext from '../../context/AppContext';
 import AppData from '../../context/AppData';
+import PlayMenu from './playbook/playmenu/PlayMenu';
+import Overview from './overview/Overview';
+import Risks from './risks/Risks';
 import { FilePond } from 'react-filepond';
 import 'filepond/dist/filepond.min.css';
 
@@ -33,8 +36,6 @@ class App extends React.Component {
 
   render() {
     const { theme, current } = this.state;
-    console.log(AppData)
-
     return (
       <AppContext.Provider value={AppData}>
         <Router>
@@ -51,11 +52,20 @@ class App extends React.Component {
               </Link>
             </Menu.Item>
           </Menu>
-          <Switch>
-            <Route exact path="/">
-              <Playbook />
-            </Route>
-          </Switch>
+          <div className="containerRoot">
+            <PlayMenu />
+            <Switch>
+              <Route exact path="/">
+                <Playbook />
+              </Route>
+              <Route exact path="/overview">
+                <Overview />
+              </Route>
+              <Route exact path="/risks">
+                <Risks />
+              </Route>
+            </Switch>
+          </div>
         </Router>
       </AppContext.Provider>
     );

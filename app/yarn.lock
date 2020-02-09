@@ -867,6 +867,13 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-transform-typescript" "^7.6.0"
 
+"@babel/runtime@7.4.5":
+  version "7.4.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.5.tgz#582bb531f5f9dc67d2fcb682979894f75e253f12"
+  integrity sha512-TuI4qpWZP6lGOGIuGWtp9sPluqYICmbk8T/1vpSysqJxRPkudh/ofFWyqdcMsDf2s7KvDL4/YHgKyvcS3g9CJQ==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/runtime@7.6.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.0.tgz#4fc1d642a9fd0299754e8b5de62c631cf5568205"
@@ -938,6 +945,104 @@
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
+
+"@fusioncharts/charts@^3.15.0":
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/@fusioncharts/charts/-/charts-3.15.0.tgz#fddb475cb6549762f24ae6311d3b34cd817b85ad"
+  integrity sha512-Fj0qGES0uiZOhoVihz3pPN9HGiMWo4kCt0SVjtezqjoxAmjTqzZyV03yAJ7mbgYYUxuNOtYZYkK32t8SkVaPpg==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    "@fusioncharts/core" "^1.0.2"
+    "@fusioncharts/features" "^1.0.2"
+    "@fusioncharts/utils" "^1.0.2"
+
+"@fusioncharts/constructor@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@fusioncharts/constructor/-/constructor-1.0.2.tgz#523242bb3e4b084323992e1b390b0724d667cfd0"
+  integrity sha512-d6nsn3olLeEmYXud89x1Y76UNL4plzLR/ZqXJgC3MxQSVgPe1oEizaLQTExpYc1FynqTjuKaEb3r5jK5i/ci6A==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    "@fusioncharts/core" "^1.0.2"
+    "@fusioncharts/maps" "^3.15.0"
+
+"@fusioncharts/core@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@fusioncharts/core/-/core-1.0.2.tgz#e2d2b84fb81429fe7fbe1b44466cda37d2ad2507"
+  integrity sha512-lk1n5tiAg6xz+G7GBuFDj4BvY7WEUOrdZYZ6bhwuovBQ+4WDAnORikxCaDwwP4MTs4AhBDN6WNZzRnQbVyVNCQ==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    "@fusioncharts/utils" "^1.0.2"
+    core-js "^3.0.1"
+    ramda "^0.25.0"
+
+"@fusioncharts/datatable@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@fusioncharts/datatable/-/datatable-1.0.2.tgz#19f4d017d8cb6b9b90673d2718a84edaba6a19a5"
+  integrity sha512-kai8RMAECc9M6UlidStBWRC3qRiMm5XU+ZZgTiTzCTpvmSJ6QiTfjkwqRx5pYq2+0Xiqr3D+9f+OLaRVyVGq0g==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    "@fusioncharts/utils" "^1.0.2"
+
+"@fusioncharts/features@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@fusioncharts/features/-/features-1.0.2.tgz#79b882ccd4b8046b61b792aef8b5535485dad264"
+  integrity sha512-9TfX2wztrP9CMjGbegWJA22l13KtP6fQObpNlkp/cqHVZ5jkKWZfK+sABrsZKsxXMqfKn+nkDuDYHCU931YeQQ==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    "@fusioncharts/core" "^1.0.2"
+    "@fusioncharts/utils" "^1.0.2"
+
+"@fusioncharts/fusiontime@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@fusioncharts/fusiontime/-/fusiontime-2.0.0.tgz#681b02e339ed36f29e20fdd1b364c6753d93b085"
+  integrity sha512-430wsxoUB7h+LiwQYorKr9Ujp9mPamJSuSKXc0us+9ca7BAyUnh5NR8w6Y55EMSddx/CwIjKKlvvBCwaOcLjEw==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    "@fusioncharts/charts" "^3.15.0"
+    "@fusioncharts/core" "^1.0.2"
+    "@fusioncharts/datatable" "^1.0.2"
+    "@fusioncharts/utils" "^1.0.2"
+    ramda "^0.25.0"
+
+"@fusioncharts/maps@^3.15.0":
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/@fusioncharts/maps/-/maps-3.15.0.tgz#61ff8b02c401885db2f305ae229247b91dae8510"
+  integrity sha512-lFxiXWo4szQcgFeZa831wR3LztBzvmr78Ckhiyvj0E78cUbEWvL+GNiSovIL6b/u365DFjrGtudDQalq/CknLA==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    "@fusioncharts/charts" "^3.15.0"
+    "@fusioncharts/core" "^1.0.2"
+    "@fusioncharts/features" "^1.0.2"
+
+"@fusioncharts/powercharts@^3.15.0-sr.1":
+  version "3.15.0-sr.1"
+  resolved "https://registry.yarnpkg.com/@fusioncharts/powercharts/-/powercharts-3.15.0-sr.1.tgz#7e0fcd75ea9afb3e62d35355fb3fb3f49f513aa3"
+  integrity sha512-ZrTs5dxr1M1I7AZmBpGpqyJpVYIFGVeVFsdE7Kl+W6EnAUUDtcPOdzdHRjCNprGCfCgTcNn/7AXuIYrcZbmI1g==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    "@fusioncharts/charts" "^3.15.0"
+    "@fusioncharts/core" "^1.0.2"
+    "@fusioncharts/utils" "^1.0.2"
+
+"@fusioncharts/utils@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@fusioncharts/utils/-/utils-1.0.2.tgz#aef8d05597d64b9cabde818604aa9c267f196b7c"
+  integrity sha512-joDHLPeh3immpdBFGm6vDdNYRcsg2yjVxi0Cs2y2zUHIt+lZ2j8mgccACX4VbhxbiOFM9gCELTmWq58/RNFbIQ==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    ramda "^0.25.0"
+
+"@fusioncharts/widgets@^3.15.0":
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/@fusioncharts/widgets/-/widgets-3.15.0.tgz#5a3d65d1ca022bfe0804da921f6a2b62beccf59e"
+  integrity sha512-itOw44HsKdjfi8ZU6M1jbJ3fmWtSYK14gpRci8+vTvVfUHie5Q4cyv1sqIMEzIFR/491c+V+LdfltoFKueVLSA==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    "@fusioncharts/charts" "^3.15.0"
+    "@fusioncharts/constructor" "^1.0.2"
+    "@fusioncharts/core" "^1.0.2"
+    "@fusioncharts/features" "^1.0.2"
+    "@fusioncharts/utils" "^1.0.2"
 
 "@hapi/address@2.x.x":
   version "2.1.2"
@@ -1132,6 +1237,98 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@progress/kendo-charts@^1.8.0":
+  version "1.13.6"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-charts/-/kendo-charts-1.13.6.tgz#6533831f07de9d339f67563f7a85efc377826d29"
+  integrity sha512-CPA2jw/FKgtM7EJ/aJoN7/lCLbnCJiXFydvuHosJ5sJl6cd0ObLxGsouqc7v/Q4fIyzsBknUrIwmJfV1AXs26Q==
+
+"@progress/kendo-data-query@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-data-query/-/kendo-data-query-1.5.2.tgz#3ae86a8aa9b76d9f58729fbb6dc5d8fd791b4329"
+  integrity sha512-W1tWOx0aTz5zKVxzuT0rJMmDHWjB/qoOgyWc+/yQimybcLIgjyju/fS/QrzWg1kyg9hPR87/fa0v5V833CAMGQ==
+  dependencies:
+    tslib "^1.7.0"
+
+"@progress/kendo-drawing@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-drawing/-/kendo-drawing-1.6.0.tgz#66e9df431f52c7dd9fd5567be80dcbfa3a162281"
+  integrity sha512-9dGlFvW9fMgqAgcbLi+SfTeMUpNYdoVthwNxwAtsRQ+QwcgXJcdzFpLrLBXp17pXpDDFpiOyMqiwjffNGwtc3w==
+  dependencies:
+    pako "^1.0.5"
+
+"@progress/kendo-file-saver@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-file-saver/-/kendo-file-saver-1.0.7.tgz#5b602115d1b0b5e26f3e52451a3ed7c29ed76c51"
+  integrity sha512-8tsho/+DATzfTW4BBaHrkF3C3jqH2/bQ+XbjqA0KfmTiBRVK6ygK+tkvkYeDhFlQBbJ02MmJlEC6OmXvXRFkUg==
+
+"@progress/kendo-popup-common@^1.2.2":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-popup-common/-/kendo-popup-common-1.7.0.tgz#d0d29dbc5eacdaba8803aa3d0f69f8a8ad05dbff"
+  integrity sha512-KxPIXDkirDpJaF/UWFKbe8QpbO5CwdQH/HyNT5Fj1qZb25YaO68VZCisls2qkcEVPHBlXesDcN3QJlt4vJ6tJw==
+
+"@progress/kendo-react-animation@3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-animation/-/kendo-react-animation-3.10.1.tgz#8519bb67ce47362ee3e3399330c859f4ec4e0a36"
+  integrity sha512-srCLTBfmWQCT+jD3OANpk9Z4Mc26vMZAqvsR8cXLtTqd+ru4L6nKJpYhSBbhFZMHGNhHRVBgo/E3NiV0N9imXQ==
+  dependencies:
+    "@progress/kendo-react-common" "3.10.1"
+    prop-types "^15.6.0"
+    react-transition-group "^2.2.0"
+
+"@progress/kendo-react-charts@^3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-charts/-/kendo-react-charts-3.10.1.tgz#0eb128d208c8f951824a6b684b49a37e75cbaa86"
+  integrity sha512-Jj+LIFNejkvHc7A8YhFFs9XMfy6+lc/cOL1aU8LhWOGt/TFUKFdlv//UUVOAsZPhwvse/kfYGYJKfwBEZZMbDQ==
+  dependencies:
+    "@progress/kendo-charts" "^1.8.0"
+    "@progress/kendo-react-common" "3.10.1"
+    "@progress/kendo-react-popup" "3.10.1"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-common@3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-common/-/kendo-react-common-3.10.1.tgz#5aa81172abb7a7470b00befb29cb1c12bfd1c459"
+  integrity sha512-FljxGhPuQvP55bc+rjtjXFft+uw6+yLYRIl/TXKVgt2IBpJjxfDmBmS0VzXWOLxCvVTqfIkbNbwawwA64X9DpA==
+  dependencies:
+    "@telerik/kendo-draggable" "2.0.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-dropdowns@^3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-3.10.1.tgz#fc43878737716069168ec93aa34dce0b4bfe704e"
+  integrity sha512-KuFFKr3jdhmJmqG9IpKnI0xDe6JmDY3JMmmAvaCk/78gbQrD/1sI6foWHZy9QOgj2dH7lHGQ1PAouph2blr60Q==
+  dependencies:
+    "@progress/kendo-react-common" "3.10.1"
+    "@progress/kendo-react-popup" "3.10.1"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-inputs@^3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-inputs/-/kendo-react-inputs-3.10.1.tgz#f3ae009d366aa6455059aa9f96193fed433c3219"
+  integrity sha512-RVABRxRmCmCpy0ZsdxTMOQgwFLVR/0WPRgurk/znK/3knDHkzJTR66yoWpacTVbKDkJCi/5RckyynEtuxD85mA==
+  dependencies:
+    "@progress/kendo-react-common" "3.10.1"
+    "@progress/kendo-react-popup" "3.10.1"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-intl@^3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-intl/-/kendo-react-intl-3.10.1.tgz#00ecd7d51f73ee312cf97e494eb77d4c48d0dedf"
+  integrity sha512-gEqYCymCRXjQkZnAunuP9OfN2ElLmnY6bhndfOHtIsi3LnAgtHs5egxzrpySa+5UbhTsrrCGpA0d81i/GqaTKg==
+  dependencies:
+    "@telerik/kendo-intl" "^2.1.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-popup@3.10.1", "@progress/kendo-react-popup@^3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-popup/-/kendo-react-popup-3.10.1.tgz#6f9577baf6ab62f17f5d3ad1834095817f34e05b"
+  integrity sha512-J4bw1NEL+/fbOvj8gm/wnfWHvLWQusOENoKj3h2K6sFQemZSwPq6ZVDj/Mv1Jue2L9w5tyNxLZkYM+86TM1vyQ==
+  dependencies:
+    "@progress/kendo-popup-common" "^1.2.2"
+    "@progress/kendo-react-animation" "3.10.1"
+    "@progress/kendo-react-common" "3.10.1"
+    prop-types "^15.6.0"
+
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-4.2.0.tgz#dadcb6218503532d6884b210e7f3c502caaa44b1"
@@ -1234,6 +1431,16 @@
     "@svgr/plugin-jsx" "^4.3.2"
     "@svgr/plugin-svgo" "^4.3.1"
     loader-utils "^1.2.3"
+
+"@telerik/kendo-draggable@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-2.0.0.tgz#95ca6fdc56022d80ab5d0fec98463e2bdf4fc3ec"
+  integrity sha512-6fZcwVZQNh9ovWbueo2VFgpFxktWdxaABe/gVZ+dJy4h+ngkoSr0HSmfUJY5QupMQ1RvLA9hr3Eficbqx+gU0Q==
+
+"@telerik/kendo-intl@^2.1.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-intl/-/kendo-intl-2.1.1.tgz#d002b1dd4143d1adf17bc9d5a50cdc451a92ffd0"
+  integrity sha512-aAJCnaWpKdnKpqrZgXf6LlgH75epc0byDoYxyzPUEPuKizQ5JTEP1KwQa4y0qkLcTgC3XSUQegadXOLzJ6phgg==
 
 "@types/babel__core@^7.1.0":
   version "7.1.3"
@@ -3004,6 +3211,11 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
   integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
 
+core-js@^3.0.1:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.4.tgz#440a83536b458114b9cb2ac1580ba377dc470647"
+  integrity sha512-4paDGScNgZP2IXXilaffL9X7968RuvwlkK3xWtZRVqgd8SYNiVKRJvkFd1aqqEuPfN7E68ZHEp9hDj6lHj4Hyw==
+
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -3616,6 +3828,13 @@ dom-converter@^0.2:
   integrity sha512-gd3ypIPfOMr9h5jIKq8E3sHOTCjeirnl0WK5ZdS1AW0Odt0b1PaWaHdJ4Qk4klv+YB9aJBS7mESXjFoDQPu6DA==
   dependencies:
     utila "~0.4"
+
+dom-helpers@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.4.0.tgz#e9b369700f959f62ecde5a6babde4bccd9169af8"
+  integrity sha512-LnuPJ+dwqKDIyotW1VzmOZ5TONUN7CwkCR5hrgawTUbkBGYdeoNLZo6nNfGkCrjtE1nXXaj7iMMpDa8/d9WoIA==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
 
 dom-matches@>=1.0.1:
   version "2.0.0"
@@ -4817,6 +5036,25 @@ functions-have-names@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.0.tgz#83da7583e4ea0c9ac5ff530f73394b033e0bf77d"
   integrity sha512-zKXyzksTeaCSw5wIX79iCA40YAa6CJMJgNg9wdkU/ERBrIdPSimPICYiLp65lRbSBqtiHql/HZfS2DyI/AH6tQ==
+
+fusioncharts@^3.15.0-sr.1:
+  version "3.15.0-sr.1"
+  resolved "https://registry.yarnpkg.com/fusioncharts/-/fusioncharts-3.15.0-sr.1.tgz#bee3d4371f19f06017dd8f9e38b0ba32bd8e1099"
+  integrity sha512-M8B6giCXWH0x6yalUmJTyBdIYRhacorzmTlnfMmfx9Kc66WAowxQwTlfTbLutKYXGsQTPH+QbXDjAOqH+f4uvg==
+  dependencies:
+    "@babel/runtime" "7.4.5"
+    "@fusioncharts/charts" "^3.15.0"
+    "@fusioncharts/constructor" "^1.0.2"
+    "@fusioncharts/core" "^1.0.2"
+    "@fusioncharts/datatable" "^1.0.2"
+    "@fusioncharts/features" "^1.0.2"
+    "@fusioncharts/fusiontime" "^2.0.0"
+    "@fusioncharts/maps" "^3.15.0"
+    "@fusioncharts/powercharts" "^3.15.0-sr.1"
+    "@fusioncharts/utils" "^1.0.2"
+    "@fusioncharts/widgets" "^3.15.0"
+    mutationobserver-shim "^0.3.3"
+    promise-polyfill "^8.1.3"
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -7183,7 +7421,7 @@ multicast-dns@^6.0.1:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
 
-mutationobserver-shim@^0.3.2:
+mutationobserver-shim@^0.3.2, mutationobserver-shim@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/mutationobserver-shim/-/mutationobserver-shim-0.3.3.tgz#65869630bc89d7bf8c9cd9cb82188cd955aacd2b"
   integrity sha512-gciOLNN8Vsf7YzcqRjKzlAJ6y7e+B86u7i3KXes0xfxx/nfLmozlW1Vn+Sc9x3tPIePFgc1AeIFhtRgkqTjzDQ==
@@ -7826,6 +8064,11 @@ p-try@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
+
+pako@^1.0.5:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
+  integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
 pako@~1.0.5:
   version "1.0.10"
@@ -8808,6 +9051,11 @@ promise-inflight@^1.0.1:
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
+promise-polyfill@^8.1.3:
+  version "8.1.3"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.1.3.tgz#8c99b3cf53f3a91c68226ffde7bde81d7f904116"
+  integrity sha512-MG5r82wBzh7pSKDRa9y+vllNHz3e3d4CNj1PQE4BQYxLme0gKYYBm9YENq+UkEikyZ0XbiGWxYlVw3Rl9O/U8g==
+
 promise@8.0.3:
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/promise/-/promise-8.0.3.tgz#f592e099c6cddc000d538ee7283bb190452b0bf6"
@@ -8972,6 +9220,11 @@ railroad-diagrams@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/railroad-diagrams/-/railroad-diagrams-1.0.0.tgz#eb7e6267548ddedfb899c1b90e57374559cddb7e"
   integrity sha1-635iZ1SN3t+4mcG5Dlc3RVnN234=
+
+ramda@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.25.0.tgz#8fdf68231cffa90bc2f9460390a0cb74a29b29a9"
+  integrity sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
 
 randexp@0.4.6:
   version "0.4.6"
@@ -9523,6 +9776,13 @@ react-error-overlay@^6.0.3:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
   integrity sha512-bOUvMWFQVk5oz8Ded9Xb7WVdEi3QGLC8tH7HmYP0Fdp4Bn3qw0tRFmr5TW6mvahzvmrK4a6bqWGfCevBflP+Xw==
 
+react-fusioncharts@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/react-fusioncharts/-/react-fusioncharts-3.1.1.tgz#85d3fd2a3ffe053d6e51168ffdb116816c6d58ea"
+  integrity sha512-31uzco+0jdiP8NrjiiBkAWA0eIlaDOWGLI3tYNHqUHw0y0Pb/6q2uIecS/rBltpXxKkQamIF5TzDqqCk4xWbgw==
+  dependencies:
+    uuid "^3.2.1"
+
 react-is@^16.10.2, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.6, react-is@^16.9.0:
   version "16.11.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.11.0.tgz#b85dfecd48ad1ce469ff558a882ca8e8313928fa"
@@ -9658,6 +9918,16 @@ react-test-renderer@^16.0.0-0:
     prop-types "^15.6.2"
     react-is "^16.8.6"
     scheduler "^0.17.0"
+
+react-transition-group@^2.2.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.9.0.tgz#df9cdb025796211151a436c69a8f3b97b5b07c8d"
+  integrity sha512-+HzNTCHpeQyl4MJ/bdE0u6XRMe9+XG/+aL4mCxVN4DnPBQ0/5bfHWPDuOZUzYdMj94daZaZdCCc1Dzt9R/xSSg==
+  dependencies:
+    dom-helpers "^3.4.0"
+    loose-envify "^1.4.0"
+    prop-types "^15.6.2"
+    react-lifecycles-compat "^3.0.4"
 
 react@^16.10.2:
   version "16.10.2"
@@ -11168,7 +11438,7 @@ ts-pnp@1.1.4, ts-pnp@^1.1.2:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.4.tgz#ae27126960ebaefb874c6d7fa4729729ab200d90"
   integrity sha512-1J/vefLC+BWSo+qe8OnJQfWTYRS6ingxjwqmHMqaMxXMj7kFtKLgAaYW3JeX3mktjgUL+etlU8/B4VUAUI9QGw==
 
-tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.7.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
@@ -11421,6 +11691,11 @@ uuid@^3.0.1, uuid@^3.3.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
+
+uuid@^3.2.1:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
+  integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"

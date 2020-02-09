@@ -34,8 +34,6 @@ class Overview extends React.Component {
     const title = data.name;
     const top = hiRange * 1.05;
     const bottom = (loRange <= .025) ? hiRange - top : loRange * .95;
-    console.log(bottom);
-    console.log(loRange);
     const lowerBadBand = {
       from: bottom,
       to: loRange,
@@ -72,7 +70,7 @@ class Overview extends React.Component {
     const temp = [[]];
 
     const inHealthyRange = userValue < hiRange && userValue > loRange;
-
+    
     const tooltipRender = ({ point }) => {
       const { value } = point;
 
@@ -120,16 +118,14 @@ class Overview extends React.Component {
         {
           (appData) => {
             const keyList = Object.keys(appData);
-            console.log(keyList);
             return <div className="containerMain">
               {keyList.map((item) => {
                 const title = item.replace('_', ' ');
                 return (
                   <div key={title} style={{ width: '100%', padding: '8px' }}>
-                    <h1 style={{ fontWeight: 'bold', marginLeft: '6.75vw', fontSize: 48, marginTop: 48 }}>{title}</h1>
+                    <h1 key={title} style={{ fontWeight: 'bold', marginLeft: '6.75vw', fontSize: 48, marginTop: 48 }}>{title}</h1>
                     {
                       appData[item].map((metric) => {
-                        console.log(metric)
                         return (
                           this.chartContainer(metric)
                         )
@@ -145,5 +141,4 @@ class Overview extends React.Component {
     );
   }
 };
-
 export default Overview;

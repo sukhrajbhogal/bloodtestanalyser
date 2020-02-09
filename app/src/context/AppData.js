@@ -10,14 +10,14 @@ const AppData = {
     // Red blood cells
     {
       name: 'Red Blood Cells',
-      value: 4.3,
+      value: 5,
       loRange: 4.50,
       hiRange: 6.0,
     },
     // hemoglobin
     {
       name: 'Hemoglobin',
-      value: 153,
+      value: 129,
       loRange: 135,
       hiRange: 175,
     },
@@ -106,7 +106,7 @@ const AppData = {
     },
     {
       name: 'Sodium',
-      value: 141,
+      value: 147,
       loRange: 135,
       hiRange: 145,
     },

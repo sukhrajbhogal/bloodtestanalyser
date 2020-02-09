@@ -3,7 +3,7 @@ import { Menu, Icon, message } from 'antd';
 import 'antd/dist/antd.css';
 import './PlayMenu.scss';
 import { Link } from 'react-router-dom';
-
+import darkTheme from '@ant-design/dark-theme'
 import AddPlayDialog from './addplaydialog/AddPlayDialog';
 import DeletePlayDialog from './deleteplaydialog/DeletePlayDialog';
 
@@ -120,11 +120,13 @@ class PlayMenu extends React.Component {
     return (
       <div>
         <Menu
+          theme="dark"
           onClick={this.handleClick}
           className="menu"
           mode="inline"
           selectedKeys={[currentKey]}
           openKeys={[currentPlayName]}
+          style={{height: '100%'}}
         >
           {
             plays.map((val) => {

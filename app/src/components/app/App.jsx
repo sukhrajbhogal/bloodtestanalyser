@@ -25,6 +25,7 @@ class App extends React.Component {
     this.state = {
       theme: 'light',
       current: currentlocation,
+      counter: 0
     };
   }
 
@@ -34,29 +35,25 @@ class App extends React.Component {
     });
   };
 
+  increaseCounter = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    })
+  }
+
   render() {
     const { theme, current } = this.state;
     return (
       <AppContext.Provider value={AppData}>
+        <div style={{position: 'absolute', top: 0, right: 0}}>
+          <h2>Hemo Analytics</h2>
+        </div>
         <Router>
-          <Menu
-            theme={theme}
-            onClick={this.handleClick}
-            selectedKeys={current}
-            mode="horizontal"
-          >
-            <Menu.Item style={{ float: 'right' }} key="home">
-              <Link to="/home">
-                <Icon type="reconciliation" />
-                Home
-              </Link>
-            </Menu.Item>
-          </Menu>
           <div className="containerRoot">
             <PlayMenu />
             <Switch>
               <Route exact path="/">
-                <Playbook />
+                <Playbook style={{}} />
               </Route>
               <Route exact path="/overview">
                 <Overview />

@@ -1,9 +1,8 @@
 const AppData = {
-  // White blood cells
   Hematology_One: [
     {
       name: 'White Blood Cells',
-      value: 3.9,
+      value: 9,
       loRange: 4.0,
       hiRange: 11.0,
     },
@@ -17,7 +16,7 @@ const AppData = {
     // hemoglobin
     {
       name: 'Hemoglobin',
-      value: 129,
+      value: 155,
       loRange: 135,
       hiRange: 175,
     },
@@ -92,7 +91,7 @@ const AppData = {
     },
     {
       name: 'Immature Granulocytes',
-      value: 0.0,
+      value: 0.05,
       loRange: 0.0,
       hiRange: 0.1,
     },
@@ -106,7 +105,7 @@ const AppData = {
     },
     {
       name: 'Sodium',
-      value: 147,
+      value: 140,
       loRange: 135,
       hiRange: 145,
     },

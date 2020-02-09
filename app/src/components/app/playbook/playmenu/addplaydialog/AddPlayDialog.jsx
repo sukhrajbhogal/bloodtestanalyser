@@ -6,6 +6,7 @@ import { FilePond, registerPlugin } from 'react-filepond';
 import 'filepond/dist/filepond.min.css';
 import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css';
+import AppContext from '../../../../../context/AppContext';
 registerPlugin(FilePondPluginImagePreview);
 
 class AddPlayDialog extends React.Component {
@@ -25,6 +26,7 @@ class AddPlayDialog extends React.Component {
     const { addPlayCallback } = this.props;
     const { playName } = this.state;
     addPlayCallback(playName, false);
+    this.context.counter = this.context.counter++;
   }
 
   /**
@@ -58,13 +60,8 @@ class AddPlayDialog extends React.Component {
         visible={addDialogVisible}
         onOk={this.handleOk}
         onCancel={this.handleCancel}
-
       >
-
-        <FilePond name="File" server="#" />
-
-
-
+       <FilePond name="File" server="#"/>
       </Modal>
 
 
@@ -82,4 +79,5 @@ AddPlayDialog.propTypes = {
   addDialogVisible: PropTypes.bool,
 };
 
+AddPlayDialog.contextType = AppContext
 export default AddPlayDialog;

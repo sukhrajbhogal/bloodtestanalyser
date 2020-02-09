@@ -5,14 +5,18 @@ import './Risks.scss';
 import { Card } from 'antd'
 import { Statistic, Icon } from 'antd'
 import { Progress } from 'antd';
+import AppContext from '../../../context/AppContext'
 
 class Risks extends React.Component {
 
   constructor(props) {
     super(props);
   }
-
+  
   render() {
+    if (this.props.counter == 0) {
+      
+    }
     return (
       <div className="containerRisk">
         <Card title='Hemoglobin' style={{ height: 400, width: '65%' }}>
@@ -60,7 +64,7 @@ class Risks extends React.Component {
               <p style={{ fontSize: 20 }}>You may be taking prescription drugs that are destroying the cells.</p>
             </Card>
             <Card style={{ marginLeft: 32, width: '50%', height: 300 }}>
-              <h1>You have lower amounts of White Blood Cells in your blood than around 43% of people.</h1>
+              <h1>You have lower amounts of White Blood Cells than around 43% of people.</h1>
               <div style={{ display: 'flex' }}>
                 <Progress type="dashboard" percent={43} />
                 <div style={{marginLeft: 24}}>
@@ -70,7 +74,6 @@ class Risks extends React.Component {
             </Card>
           </div>
         </Card>
-
       </div>
     )
   }

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/dark-theme": "^1.0.3",
     "@progress/kendo-data-query": "^1.5.2",
     "@progress/kendo-drawing": "^1.6.0",
     "@progress/kendo-file-saver": "^1.0.7",

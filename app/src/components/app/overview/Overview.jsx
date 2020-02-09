@@ -121,9 +121,13 @@ class Overview extends React.Component {
             return <div className="containerMain">
               {keyList.map((item) => {
                 const title = item.replace('_', ' ');
+                if (title == 'counter') {
+                  console.log(appData['counter'])
+                  return;
+                }
                 return (
                   <div key={title} style={{ width: '100%', padding: '8px' }}>
-                    <h1 key={title} style={{ fontWeight: 'bold', marginLeft: '6.75vw', fontSize: 48, marginTop: 48 }}>{title}</h1>
+                    <h1 key={title} style={{fontSize:36, fontWeight: 'bold', marginLeft: '6.75vw', fontSize: 48, marginTop: 48 }}>{title}</h1>
                     {
                       appData[item].map((metric) => {
                         return (

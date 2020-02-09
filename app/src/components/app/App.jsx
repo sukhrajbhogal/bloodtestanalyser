@@ -7,7 +7,9 @@ import {
 
 import Playbook from './playbook/Playbook';
 import AppContext from '../../context/AppContext';
-import AppData from '../../context/AppData'
+import AppData from '../../context/AppData';
+import { FilePond } from 'react-filepond';
+import 'filepond/dist/filepond.min.css';
 
 class App extends React.Component {
   constructor(props) {

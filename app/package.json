@@ -19,7 +19,7 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "filepond": "^4.10.0",
     "filepond-plugin-image-preview": "^4.6.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
